@@ -1,5 +1,31 @@
 # @primer/css
 
+## 18.0.0-next.0
+
+### Major Changes
+
+- [#1541](https://github.com/primer/css/pull/1541) [`d24d3822`](https://github.com/primer/css/commit/d24d3822aee5c9b855d0b62ff960a87545221868) Thanks [@jonrohan](https://github.com/jonrohan)! - Removing the rem() mixin and usages. Placing the computed values in place.
+
+* [#1462](https://github.com/primer/css/pull/1462) [`32040ff9`](https://github.com/primer/css/commit/32040ff9ca7df9cd6f9cca8124fb95bde0fa4834) Thanks [@jonrohan](https://github.com/jonrohan)! - Rename `modes.scss` file to `color-modes.scss` and move from the `base/` folder to the `support/variables` folder.
+
+- [#1465](https://github.com/primer/css/pull/1465) [`53685d83`](https://github.com/primer/css/commit/53685d8321bfa5eb07d2feacd51ad27239cbcaba) Thanks [@jonrohan](https://github.com/jonrohan)! - Moving color modes to their own bundle, `./color-modes/` and separates color mode themes into their own scss file.
+
+* [#1566](https://github.com/primer/css/pull/1566) [`816a5d50`](https://github.com/primer/css/commit/816a5d5083dcd590f4bbac12e052815c0d1a9755) Thanks [@jonrohan](https://github.com/jonrohan)! - Remove break-word from utilities
+
+### Minor Changes
+
+- [#1575](https://github.com/primer/css/pull/1575) [`c7ea6448`](https://github.com/primer/css/commit/c7ea6448c114065627299db7ba65418799d4a59b) Thanks [@jonrohan](https://github.com/jonrohan)! - Replacing deprecated variables with color v2 variables
+
+* [#1573](https://github.com/primer/css/pull/1573) [`386dfa01`](https://github.com/primer/css/commit/386dfa0145a64e2c6edbdf8ab09d9fc3f7151f6a) Thanks [@simurai](https://github.com/simurai)! - Improve the font stack on Windows
+
+  - `Segoe UI Variable` -> `Segoe UI Variable Text`.
+    - "Segoe UI Variable Text" seems to be the better option for a lot of text (markdown). In the future we might can consider having a UI and a "text" font stack.
+  - Add `Meiryo` before `system-ui`.
+    - This should have the effect that the browser will use `Meiryo` instead of `Yu Gothic UI` and should improve font rendering, especially for Japanese.
+    - Note: In an earlier version, `Yu Gothic` was used. But with great [feedback](https://twitter.com/448jp/status/1435087523185758212) from @448jp and @hiloki https://github.com/primer/css/pull/1573#issuecomment-913973890 it seems `Meiryo` is the better default.
+
+- [#1579](https://github.com/primer/css/pull/1579) [`c3b4a0c3`](https://github.com/primer/css/commit/c3b4a0c36302af7bb06ca996f37a63470ab99c62) Thanks [@jonrohan](https://github.com/jonrohan)! - Removing v2 color mode css var fallbacks. `var(--color-v2, var(--color-v1))` becomes `var(--color-v2)`
+
 ## 17.8.0
 
 ### Minor Changes

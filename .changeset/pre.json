@@ -4,5 +4,13 @@
   "initialVersions": {
     "@primer/css": "17.0.0"
   },
-  "changesets": []
+  "changesets": [
+    "cuddly-apricots-protect",
+    "dirty-bikes-play",
+    "flat-shirts-lay",
+    "mighty-goats-teach",
+    "new-beers-peel",
+    "shaggy-shirts-camp",
+    "twelve-fireants-shave"
+  ]
 }
